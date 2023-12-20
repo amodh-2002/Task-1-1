@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #14131A;
+  }
+  /* MainHeading start  */
+  .main-heading{
+    color: #fff;
+    margin: 1rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .title-left h2{
+    margin-bottom: 1rem;
+  }
+  .links-right ul{
+    display: flex;
+  }
+  .links-right ul li{
+    display: flex;
+    align-items: center;
+    margin: 0rem 1rem;
+    transition: all 0.6s ease-in-out;
+  }
+  .links-right ul li a{
+    color: wheat;
+    text-decoration: none;
+    border-right: 1px solid white;
+    padding-right: 14px;
+  }
+  .links-right ul li:hover{
+    transform: scale(1.1);
+    border-bottom: 0.5px solid white;
+  }
+
+  /* MainHeading end   */
+
+  /* form Starting  */
+
+  .form{
+    border-top: 1px solid rgb(202, 199, 199);
+    margin:2.8rem 1.2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: #fff;
+    padding-top: 1.4rem;
+  }
+  .form-group{
+    margin-right: 2rem;
+  }
+  .form-group input{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 0.5rem auto;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0.8rem;
+    background-color: #2C2C2C;
+    color: #FFFFFF;
+  }
+  .form-group #active{
+    width: 80%;
+    margin: 0.5rem auto;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    background-color: #2C2C2C;
+    color: #FFFFFF;
+  }
+  .form-group #company{
+    width: 90%;
+    margin: 0.5rem auto;
+    margin-left: -2.6rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    background-color: #2C2C2C;
+    color: #FFFFFF;
+  }
+  .continue{
+    display: block;
+    width: 7%;
+    text-align: center;
+    margin: -1.2rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    padding: 0.8rem;
+    cursor: pointer;
+    background-color: #6c9ef8;
+    color: #FFFFFF ;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+
+  /* table starting  */
+  .main-table{
+    width: 100%;
+    margin: 6rem 1.2rem;
+    color: white;
+  }
+  table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 15px;
+  }
+  tr:nth-child(even) {
+    background-color: #2C2C2C;
+  }
+
+  .home{
+    margin: 2rem auto;
+  }
+
+
+  /* responsive  */
+  @media only screen and (max-width:1221px) {
+    .list-right{
+        font-size: 12px;
+    }
+  }

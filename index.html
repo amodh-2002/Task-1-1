@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar start -->
+    <div class="navbar">
+        <div class="logo-left">
+            <img src="./rl-logo.png" alt="main-logo">
+        </div>
+        <div class="list-right">
+            <ul>
+                <li><a href="#">New Calculations</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Companies</a></li>
+                <li><a href="#">Surveys</a></li>
+                <li><a href="#">Zip Rates</a></li>
+                <li><a href="#">Tax Applicability</a></li>
+                <li><a href="#">App Settings</a></li>
+                <li><a href="#">AMODH BH</a></li>
+              </ul>
+        </div>
+    </div>
+    <!-- navbar end -->
+    <div class="hero-section">
+        <div class="title">
+            <h2>Inspection Location</h2>
+            <p>Set Your Location Using The Fields Below</p>
+        </div>
+        <div class="main-form">
+            <a href="">Fill My Current Location</a>
+                <form action="">
+                    <div class="form-group">
+                        <label for="street"><span class="required">*</span>Street 1</label>
+                        <input type="text" autocomplete="off" placeholder="Enter Street Name" required id="street">
+                        <label for="city"><span class="required">*</span>City </label>
+                        <input type="text" autocomplete="off" placeholder="Enter City Name" required id="city">
+                        <label for="city"><span class="required">*</span>Available States </label>
+                        <select required id="state" name="state">
+                            <option value="">Select a state</option>
+                            <option value="AL">Karnataka</option>
+                            <option value="AK">Gujurat</option>
+                            <option value="AZ">Jammu</option>
+                        </select>
+                        <a href="#" id="continue">Continue</a>
+                    </div>
+                </form>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
