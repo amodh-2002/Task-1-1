@@ -1,4 +1,5 @@
 let button = document.querySelector("#continue")
+let icon = document.querySelector("#icon-sun")
 
 function validateForm() {
     let inputField = document.querySelector('input').value;
@@ -11,3 +12,12 @@ function validateForm() {
   }
 
 button.addEventListener("click",validateForm)
+
+icon.addEventListener("click",()=>{
+  document.body.classList.toggle("white-theme")
+  if(document.body.classList.contains("white-theme")){
+    icon.src = "./moon.png"
+  }else{
+    icon.src = "./sun.png"
+  }
+})

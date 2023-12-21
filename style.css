@@ -4,10 +4,23 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  :root{
+    --primary-color: #14131A;
+    --secondary-color: #1C1B23;
+    --font-color: #ffffff;
+    --input-color: #2C2C2C;
+  }
+  .white-theme{
+    --primary-color: #ffffff;
+    --secondary-color: #e3e1ec;
+    --font-color:#010101;
+    --input-color: #e5e5e5;
+  }
   
   body {
     font-family: 'Poppins', sans-serif;
-    background-color: #14131A;
+    background-color: var(--primary-color);
   }
   body::-webkit-scrollbar{
     display: none;
@@ -19,7 +32,7 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #1C1B23;
+    background-color: var(--secondary-color);
     padding: 0.3rem 1rem;
     display: flex;
     justify-content: space-between;
@@ -35,9 +48,18 @@
     cursor: pointer;
     margin-top: 1rem;
   }
+  .list-right{
+    display: flex;
+  }
+  .list-right #icon-sun{
+    margin-left: 1rem;
+    transition: all 0.3s ease;
+  }
   .list-right ul{
     display: flex;
+    text-align: right;
     align-items: center;
+    justify-content: space-between;
   }
   .list-right ul li {
     display: flex;
@@ -47,11 +69,16 @@
   }
   .list-right ul li a{
     text-decoration: none;
-    color: white;
+    font-size: 1.1rem;
+    color: var(--font-color);
   }
   .list-right ul li:hover{
     transform: scale(1.1);
-    border-bottom: 0.5px solid white;
+    border-bottom: 0.5px solid var(--font-color);
+  }
+  #icon-sun{
+    width: 30px;
+    cursor: pointer;
   }
 
   /* navbar end  */
@@ -59,12 +86,12 @@
   /* HeroSection starts  */
   .hero-section{
     text-align: center;
-    border: 1px solid white;
+    border: 1px solid var(--font-color);
     width: 50%;
     height: 550px;
     margin:10rem auto;
-    background-color: #14131A;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--font-color);
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.1);
   }
@@ -76,6 +103,7 @@
   }
   .main-form a{
     color: #6c9ef8;
+    font-weight: bold;
     text-decoration: none;
   }
   .form-group {
@@ -91,8 +119,8 @@
     border: none;
     outline: none;
     padding: 0.5rem;
-    background-color: #2C2C2C;
-    color: #FFFFFF;
+    background-color: var(--input-color);
+    color: var(--font-color);
   }
   .form-group #state{
     width: 50%;
@@ -102,8 +130,8 @@
     border: none;
     outline: none;
     padding: 0.5rem;
-    background-color: #2C2C2C;
-    color: #FFFFFF;
+    background-color: var(--input-color);
+    color: var(--font-color);
   }  
   #continue{
     width: 30%;
@@ -114,7 +142,7 @@
     padding: 1rem;
     cursor: pointer;
     background-color: #6c9ef8;
-    color: #FFFFFF ;
+    color: var(--font-color) ;
     font-weight: bold;
     text-decoration: none;
   }
