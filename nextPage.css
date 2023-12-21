@@ -9,6 +9,9 @@
     font-family: 'Poppins', sans-serif;
     background-color: var(--primary-color);
   }
+  body::-webkit-scrollbar{
+    display: none;
+  }
   :root{
     --primary-color: #14131A;
     --secondary-color: #1C1B23;
@@ -157,8 +160,14 @@
 
 
   /* responsive  */
-  @media only screen and (max-width:1221px) {
-    .list-right{
-        font-size: 12px;
+  @media only screen and (max-width:1415px) {
+    .main-table{
+        width: 40%;
+    }
+  }
+
+  @media screen and (max-width:1320px) {
+    .main-table{
+      width: 20%;
     }
   }

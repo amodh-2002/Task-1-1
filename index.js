@@ -3,6 +3,7 @@ let icon = document.querySelector("#icon-sun")
 let hamburger = document.querySelector(".hamburger")
 let navMenu = document.querySelector(".list-right ul")
 
+
 function validateForm() {
     let inputField = document.querySelector('input').value;
     console.log(inputField)
@@ -27,6 +28,7 @@ icon.addEventListener("click",()=>{
 hamburger.addEventListener("click",()=>{
   hamburger.classList.toggle("active")
   navMenu.classList.toggle("active")
+  console.log(hamburger)
 })
 
 document.querySelectorAll(".list-right ul li").forEach((n)=> {

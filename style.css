@@ -178,7 +178,7 @@
     }
     @media (max-width:1260px) {
       .list-right ul li a{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
       }
       #icon-sun{
         width: 20px;
@@ -204,13 +204,13 @@
         display: block;
       }
 
-      .hamburger .active .bar:nth-child(2){
+      .hamburger.active .bar:nth-child(2){
         opacity: 0;
       }
-      .hamburger .active .bar:nth-child(1){
+      .hamburger.active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
       }
-      .hamburger .active .bar:nth-child(3){
+      .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
       }
       .list-right ul{
@@ -227,8 +227,9 @@
       .list-right ul li {
         margin: 16px 0;
       }
-       .list-right ul .active{
+       .list-right ul.active{
         left: 0;
+        margin-top: 1.7rem;
        }
 
        #icon-sun{
