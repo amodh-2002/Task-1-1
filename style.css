@@ -51,10 +51,6 @@
   .list-right{
     display: flex;
   }
-  .list-right #icon-sun{
-    margin-left: 1rem;
-    transition: all 0.3s ease;
-  }
   .list-right ul{
     display: flex;
     text-align: right;
@@ -79,6 +75,22 @@
   #icon-sun{
     width: 30px;
     cursor: pointer;
+    margin-left: 1rem;
+    transition: all 0.3s ease;
+    object-fit: cover;
+  }
+  .hamburger{
+    display: none;
+    cursor: pointer;
+  }
+  .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.5s ease-in-out;
+    background-color: var(--font-color);
+
   }
 
   /* navbar end  */
@@ -154,6 +166,78 @@
 
     /* HeroSection ends  */
 
+
+    /* responsivenes  */
+    @media (max-width:1335px) {
+      .list-right{
+        white-space: nowrap;
+      }
+      .list-right ul li a{
+        font-size: 1rem;
+      }
+    }
+    @media (max-width:1260px) {
+      .list-right ul li a{
+        font-size: 0.8rem;
+      }
+      #icon-sun{
+        width: 20px;
+      }
+      .title h2{
+        font-size: 1.3rem;
+      }
+      .title p, .main-form a{
+        font-size: 0.8rem;
+      }
+      .form-group input, label, select,option{
+        font-size: 1rem;
+      }
+      #continue{
+        width: 30%;
+        font-size: 1rem;
+
+      }
+      
+    }
+    @media (max-width:995px) {
+      .hamburger{
+        display: block;
+      }
+
+      .hamburger .active .bar:nth-child(2){
+        opacity: 0;
+      }
+      .hamburger .active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+      }
+      .hamburger .active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+      }
+      .list-right ul{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--secondary-color);
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+      }
+      .list-right ul li {
+        margin: 16px 0;
+      }
+       .list-right ul .active{
+        left: 0;
+       }
+
+       #icon-sun{
+        margin: 0 1rem;
+        width: 20px;
+        object-fit: cover;
+       }
+
+    }
 
   
 

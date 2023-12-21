@@ -19,6 +19,7 @@
                 <li><a href="">Add Batch</a></li>
                 <li><a href="">Export Active Users</a></li>
             </ul>
+            <img src="./sun.png" alt="sun" id="icon-sun">
         </div>
     </div>
     <!-- main-heading end  -->
@@ -125,5 +126,17 @@
           </table>
     </div>
     <a class="continue home" href="./index.html">Home</a>
+    <script>
+        let icon = document.querySelector("#icon-sun")
+        
+        icon.addEventListener("click",()=>{
+        document.body.classList.toggle("white-theme")
+        if(document.body.classList.contains("white-theme")){
+            icon.src = "./moon.png"
+        }else{
+            icon.src = "./sun.png"
+        }
+        })
+    </script>
 </body>
 </html>
